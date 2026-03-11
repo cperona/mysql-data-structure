@@ -18,7 +18,12 @@ CREATE TABLE CLIENT (
   registration_date DATE DEFAULT (CURRENT_DATE)
 );
 
+CREATE TABLE TRANSACTION (
+  Transaction_ID INTEGER PRIMARY KEY
+);
 -- insert
 INSERT INTO CLIENT(Client_ID, name, address, phone, email) VALUES(1, 'Sergi', 'Invent Street, num 2', '654907621', 'ser@gmoil.com');
 INSERT INTO CLIENT(Client_ID, name, address, phone, email) VALUES(2, 'Dani', 'Invent Street, num 4', '634789843', 'dan@gmoil.com');
 
+-- select to check if the row exists
+SELECT * FROM CLIENT;
