@@ -2,7 +2,7 @@
 
 ## Exercise 1
 
-An optical shop called “Cul d'Ampolla” wants to computerize the management of its customers and glasses sales.
+An optical shop wants to computerize the management of its customers and glasses sales.
 
 The system must store information about suppliers, including their name, address (street, number, floor, door, city, postal code, country), phone number, fax, and tax identification number (NIF).
 
