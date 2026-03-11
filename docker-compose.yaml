@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+      # uncomment below if you want to automatically create and select a database
+      # MYSQL_DATABASE: my_database
+    ports:
+      #left: host port, right: container port
+      - "3306:3306"
+    volumes:
+      #left: host folder, right: container folder
+      - mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:

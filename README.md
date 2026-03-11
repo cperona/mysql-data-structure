@@ -56,3 +56,12 @@ on the Transaction, an acqusition is made to a Set_Of_Glasses --> 1:N
 ...
 
 a Set_Of_Glasses is from a Supplier --> N:1
+
+
+#### MySQL Set up
+- Create a docker-compose.yaml file with a mysql service
+- Run the docker compose with: ```docker compose up -d```
+- Attach to the mysql cli with: ```docker exec -it mysql-container mysql -u root -p```
+
+#### Database creation
+Create a .sql file that creates the database and fills some data: 'optics-store.sql'
