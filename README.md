@@ -1,6 +1,6 @@
 # MySQL Data Structure
 
-## Exercise 1
+## Exercise 1 - Optics Store
 
 An optical shop wants to computerize the management of its customers and glasses sales.
 
@@ -65,3 +65,102 @@ a Set_Of_Glasses is from a Supplier --> N:1
 
 #### Database creation
 Create a .sql file that creates the database and fills some data: 'optics-store.sql'
+
+## Exercise 2 - Pizzeria
+You have been hired to design a website that allows customers to order food for home delivery online.
+
+The database should store the following information:
+
+Customers
+
+Each customer has a unique identifier and the following data:
+
+First name
+
+Last name
+
+Address
+
+Postal code
+
+City
+
+Province
+
+Phone number
+
+Cities and provinces are stored in separate tables. A city belongs to only one province, while a province can contain many cities. Each city and province has a unique identifier and a name.
+
+Orders
+
+A customer can place many orders, but each order belongs to only one customer. Each order stores:
+
+A unique identifier
+
+Date and time
+
+Whether the order is for home delivery or store pickup
+
+The quantity of each type of product selected
+
+The total price
+
+An order can contain one or more products.
+
+Products
+
+Products can be:
+
+Pizzas
+
+Hamburgers
+
+Drinks
+
+Each product has:
+
+A unique identifier
+
+Name
+
+Description
+
+Image
+
+Price
+
+Pizza Categories
+
+Pizzas belong to categories, which may change name during the year. A pizza can belong to only one category, but a category can include many pizzas. Each category stores a unique identifier and a name.
+
+Stores
+
+Each order is managed by one store, and a store can manage many orders. Each store has:
+
+A unique identifier
+
+Address
+
+Postal code
+
+City
+
+Province
+
+Employees
+
+A store can have many employees, but each employee works in only one store. Each employee stores:
+
+A unique identifier
+
+First name
+
+Last name
+
+NIF (tax ID)
+
+Phone number
+
+Role (cook or delivery driver)
+
+For home delivery orders, the database must also store which delivery driver delivered the order and the date and time of delivery.
