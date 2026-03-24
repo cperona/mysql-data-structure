@@ -60,11 +60,13 @@ a Set_Of_Glasses is from a Supplier --> N:1
 
 #### MySQL Set up
 - Create a docker-compose.yaml file with a mysql service
-- Run the docker compose with: ```docker compose up -d```
-- Attach to the mysql cli with: ```docker exec -it mysql-container mysql -u root -p```
+- Run the docker compose with: ``docker compose up -d``
+- Enter inside the mysql console: ``docker exec -it mysql-container mysql -u root -p``
+- Load .sql files onto the mysql inside the container: ``docker exec -i mysql-container mysql -u root -p'pw' < file-to-load.sql ``
 
 #### Database creation
 Create a .sql file that creates the database and fills some data: 'optics-store.sql'
+
 
 ## Exercise 2 - Pizzeria
 You have been hired to design a website that allows customers to order food for home delivery online.
