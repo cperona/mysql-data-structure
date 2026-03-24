@@ -62,7 +62,7 @@ a Set_Of_Glasses is from a Supplier --> N:1
 - Create a docker-compose.yaml file with a mysql service
 - Run the docker compose with: ``docker compose up -d``
 - Enter inside the mysql console: ``docker exec -it mysql-container mysql -u root -p``
-- Load .sql files onto the mysql inside the container: ``docker exec -i mysql-container mysql -u root -p'pw' < file-to-load.sql ``
+- Load .sql files onto the mysql inside the container: ``docker exec -i mysql-container mysql -u root -p'pw' < file-to-load.sql ``. Without the -t: Notice that I've removed the "t" from "-it". When redirecting files using <, the "TTY" mode (interactive terminal) often causes issues or "Input is not a TTY" warnings. Using -i alone is sufficient.
 
 #### Database creation
 Create a .sql file that creates the database and fills some data: 'optics-store.sql'
